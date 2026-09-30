@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Parcial</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="contenedor-nav">
+            <div class="nav-logo">
+                <a href="#header"><img src="img/logoPrueba.png" alt="Logo de prueba"></a>
+            </div>
+            <nav class="nav-menu">
+                <a href="#header">Inicio</a>
+                <a href="#imagenes">Galería</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="imagenes" id="imagenes">
+        <h2>Galería de imágenes</h2>
+        <div class="contenedor-articulos">
+            <article class="tarjeta">
+                <img src="img/articulo1.png" alt="Sudadera negra con un emblema de lobo y espada" class="slide">
+                <h3>El emblema del lobo</h3>
+                <p>Una sudadera negra con un llamativo diseño de lobo, espada y detalles azules.</p>
+            </article>
+            <article class="tarjeta">
+                <img src="img/articulo1.png" alt="Detalle de la sudadera negra en un paisaje de montañas" class="slide">
+                <h3>Estilo para la aventura</h3>
+                <p>Un diseño de inspiración fantástica que destaca entre montañas y paisajes nevados.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2>Contáctanos</h2>
+        <p class="descripcion-contacto">¿Tienes alguna pregunta? Escríbenos.</p>
+        <form class="formulario-contacto">
+            <div class="campo-formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+            </div>
+            <div class="campo-formulario">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" autocomplete="email" required>
+            </div>
+            <div class="campo-formulario">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section class="ventas" id="ventas">
+        <h2>Comparativa de ventas</h2>
+        <p class="descripcion-ventas">Cifras nuestro rendimiento de cada artículo.</p>
+        <div class="contenedor-tabla">
+            <table>
+                <caption>Ventas en pesos colombianos (COP)</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Artículo</th>
+                        <th scope="col">Unidades vendidas</th>
+                        <th scope="col">Precio unitario</th>
+                        <th scope="col">Ingresos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">El emblema del lobo</th>
+                        <td>32</td>
+                        <td>$89.900</td>
+                        <td>$2.876.800</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Estilo para la aventura</th>
+                        <td>24</td>
+                        <td>$109.900</td>
+                        <td>$2.637.600</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Total</th>
+                        <td>56</td>
+                        <td>$199.800</td>
+                        <td>$5.514.400</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="contenido-footer">
+            <div class="identidad-footer">
+                <a class="logo-footer" href="#header">
+                    <img src="img/logoPrueba.png" alt="Volver al inicio">
+                </a>
+                <div class="texto-footer">
+                    <a class="marca-footer" href="#header">Diseño con carácter</a>
+                    <p>Prendas con personalidad para acompañarte en cada aventura.</p>
+                </div>
+            </div>
+            <nav class="enlaces-footer" aria-label="Navegación del pie de página">
+                <a href="#header">Inicio</a>
+                <a href="#imagenes">Galería</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#ventas">Ventas</a>
+            </nav>
+            <p class="copyright-footer">&copy; 2026 · Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
